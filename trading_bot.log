@@ -1,0 +1,6 @@
+2026-06-09T00:08:48 | INFO     | trading_bot | CLI invoked: symbol=BTCUSDT side=SELL type=MARKET qty=0.001 price=None stop_price=None dry_run=False
+2026-06-09T00:08:48 | DEBUG    | trading_bot.client | BinanceFuturesClient initialised (testnet).
+2026-06-09T00:08:48 | INFO     | trading_bot.orders | Placing order → symbol=BTCUSDT side=SELL type=MARKET qty=0.001
+2026-06-09T00:08:48 | DEBUG    | trading_bot.client | → POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.001}
+2026-06-09T00:08:49 | DEBUG    | trading_bot.client | ← HTTP 200 | body: {"orderId":14514512444,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"KuHUs9nS2yKl1wwX2HNWlC","price":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1780943029209}
+2026-06-09T00:08:49 | INFO     | trading_bot.orders | Order accepted → id=14514512444 status=NEW execQty=0.0 avgPrice=N/A
